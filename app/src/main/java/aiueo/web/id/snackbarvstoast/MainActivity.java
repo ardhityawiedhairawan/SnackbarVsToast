@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Snackbar snackbar = Snackbar
-                        .make(coordinatorLayout, "Welcome to AndroidHive", Snackbar.LENGTH_LONG);
+                        .make(coordinatorLayout, "Hallo from Snackbar - AIUEO.WEB.ID", Snackbar.LENGTH_LONG);
 
                 snackbar.show();
             }
