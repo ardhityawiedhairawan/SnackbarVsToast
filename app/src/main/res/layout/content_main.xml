@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aiueo.web.id.snackbarvstoast.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Snackbar vs Toast"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnSimpleSnackbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_marginTop="30dp"
+        android:text="Simple Snackbar" />
+
+    <Button
+        android:id="@+id/btnActionCallback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSimpleSnackbar"
+        android:layout_marginTop="10dp"
+        android:text="With Action Callback" />
+
+    <Button
+        android:id="@+id/btnCustomSnackbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnActionCallback"
+        android:layout_marginTop="10dp"
+        android:text="Custom Color" />
+
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCustomSnackbar"
+        android:layout_marginTop="10dp"
+        android:text="Toast" />
+
+    <Button
+        android:id="@+id/btnCustomToast"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnToast"
+        android:layout_marginTop="10dp"
+        android:text="Custom Toast" />
+</RelativeLayout>
